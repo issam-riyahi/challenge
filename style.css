@@ -33,6 +33,9 @@ a {
   width: 100%;
   height: 150px;
 }
+.logo-tow {
+  display: none;
+}
 .nav-link .nav-container {
   display: flex;
   justify-content: space-between;
@@ -76,6 +79,12 @@ a {
   opacity: 1;
   left: 10%;
   right: 10%;
+}
+.close-humberger {
+  display: none;
+}
+.humberger {
+  display: none;
 }
 .content-header {
   width: 100%;
@@ -162,7 +171,8 @@ a {
   font-size: 2.5rem;
   color: rgb(34, 33, 33);
 }
-.creation .container .see-all a {
+.creation .container .see-all a,
+.see-all2 a {
   padding: 5px 30px;
   border: 2px solid rgb(34, 33, 33);
   color: rgb(34, 33, 33);
@@ -189,6 +199,9 @@ a {
 }
 .creation-content .container-creation .rows .IM:not(:last-child) {
   margin-right: 25px;
+}
+.creation-content .container-creation .rows .IM .mobile {
+  display: none;
 }
 .creation-content .container-creation .rows .IM IMG {
   width: 100%;
@@ -246,3 +259,194 @@ footer {
   color: #fff;
   font-size: 15px;
 }
+@media screen and (max-width: 950px) {
+  .nav-link .nav-container {
+    padding: 0 100px;
+  }
+  .nav-container .link {
+    position: fixed;
+    background-color: rgba(27, 27, 27);
+    width: 0%;
+    right: 0px;
+
+    height: 100vh;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s linear;
+  }
+  .nav-container .link.responsive {
+    width: 100%;
+  }
+  .nav-container .link ul {
+    padding: 50px;
+    display: block;
+  }
+  .nav-container .link ul li {
+    margin-bottom: 10px;
+  }
+  .nav-container .link ul li a {
+    font-size: 2.5rem;
+  }
+  .nav-container .link ul li a:hover::before {
+    left: 0;
+    right: 0;
+  }
+  .title-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .logo-tow {
+    display: block;
+  }
+  .close-humberger {
+    display: flex;
+    right: 50px;
+    top: 50px;
+
+    top: 50px;
+    right: 0;
+  }
+  .humberger {
+    display: block;
+  }
+  .vr {
+    height: 750px;
+  }
+  .caontainer-vr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .vr .caontainer-vr {
+    padding: 0 30px;
+  }
+  .vr .caontainer-vr .image-vr {
+    position: initial;
+    width: 500px;
+  }
+  .vr .caontainer-vr .content-vr {
+    position: initial;
+  }
+  .creation .container {
+    padding: 0 50px;
+  }
+  .creation-content .container-creation {
+    padding: 0 50px;
+  }
+  .creation-content .container-creation .rows .IM p {
+    font-size: 1rem;
+    width: 100px;
+    font-weight: bold;
+  }
+  footer {
+    height: auto;
+  }
+  .conatiner-footer {
+    padding: 40px 50px 0;
+  }
+  .auter-link {
+    flex-direction: column;
+    text-align: center;
+  }
+  .auter-link .link ul {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .auter-link .copyraith {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-link .nav-container {
+    padding: 0 20px;
+  }
+  .background {
+    width: 100%;
+    height: 650px;
+  }
+  .content-header {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    top: 250px;
+  }
+  .content-header .child-content {
+    width: 100%;
+    left: 20px;
+    font-size: 2rem;
+  }
+  .vr {
+    height: 650px;
+  }
+  .vr .caontainer-vr {
+    padding: 0 20px;
+  }
+  .vr .caontainer-vr .image-vr {
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .vr .caontainer-vr .content-vr {
+    width: auto;
+  }
+  .vr .caontainer-vr .content-vr .child-vr-content {
+    padding: 30px 10px;
+  }
+  .vr .caontainer-vr .content-vr .child-vr-content h1 {
+    font-size: 2.2rem;
+  }
+  .creation .container .title {
+    width: 100%;
+    text-align: center;
+  }
+  .creation .container .title h1 {
+    font-size: 2.2rem;
+  }
+  .see-all {
+    display: none;
+  }
+  .creation-content .container-creation {
+    padding: 0 20px;
+  }
+  .creation-content .container-creation .rows {
+    flex-direction: column;
+  }
+  .Main .creation-content .container-creation .rows .IM {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .creation-content .container-creation .rows .IM .desketop {
+    display: none;
+  }
+  .creation-content .container-creation .rows .IM .mobile {
+    display: block;
+  }
+  .conatiner-footer {
+    padding: 30px 20px;
+  }
+  .tilte-social {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .logo-nav {
+    margin-bottom: 20px;
+  }
+  .auter-link .link ul {
+    flex-direction: column;
+  }
+  .auter-link .link ul li {
+    margin-bottom: 10px;
+  }
+  .see-all2 {
+    text-align: center;
+  }
+} ;
